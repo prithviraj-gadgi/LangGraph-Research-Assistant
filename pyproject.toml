@@ -1,0 +1,12 @@
+[project]
+name = "langgraph-research-assistant"
+version = "0.1.0"
+description = "A multi-agent research workflow that creates analyst personas, runs parallel interview loops with web search, and synthesizes the results into a cited report using LangGraph, LangChain, Qwen, and Tavily."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "langchain>=1.4.2",
+    "langchain-ollama>=1.1.0",
+    "langsmith>=0.14.1",
+    "python-dotenv>=1.2.3",
+]
