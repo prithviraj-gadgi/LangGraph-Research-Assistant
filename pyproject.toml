@@ -1,14 +1,14 @@
 [project]
 name = "langgraph-research-assistant"
 version = "0.1.0"
-description = "A multi-agent research workflow that creates analyst personas, runs parallel interview loops with web search, and synthesizes the results into a cited report using LangGraph, LangChain, Qwen, and Tavily."
+description = "A multi-agent research workflow that creates analyst personas, runs parallel interview loops with web search, and synthesizes the results into a cited report using LangChain, LangGraph, Gemma, and Tavily."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "langchain>=1.4.2",
     "langchain-mcp-adapters>=0.3.2",
     "langchain-ollama>=1.1.0",
+    "langchain-tavily>=0.2.18",
+    "langgraph-cli[inmem]>=0.4.32",
     "langsmith>=0.14.1",
-    "python-dotenv>=1.2.3",
-    "structlog>=26.1.0",
 ]

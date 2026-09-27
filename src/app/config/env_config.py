@@ -50,6 +50,12 @@ class Settings(BaseSettings):
         alias="LANGSMITH_PROJECT",
     )
 
+    tavily_api_key: str = Field(
+        default="",
+        description="The API key to access the Tavily API",
+        alias="TAVILY_API_KEY",
+    )
+
     model_config = SettingsConfigDict(
         env_file=".env",
         env_file_encoding="utf-8",
